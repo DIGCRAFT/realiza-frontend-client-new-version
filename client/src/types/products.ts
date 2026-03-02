@@ -10,6 +10,7 @@ export interface WoodColor {
   hexCode?: string;
   imageName?: string;
   category: string;
+  slatImage?: string | null;
 }
 
 export interface ProductLineConfig {

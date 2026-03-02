@@ -83,10 +83,34 @@ const productConfigs: Record<string, ProductLineConfig> = {
       },
     ],
     solidColors: [
-      { id: "7", name: "Branco", hexCode: "#FFFFFF", category: "solid" },
-      { id: "8", name: "Preto", hexCode: "#1A1A1A", category: "solid" },
-      { id: "9", name: "Alumínio", hexCode: "#C0C0C0", category: "solid" },
-      { id: "10", name: "Aço Cortêm", hexCode: "#C0C0C0", category: "solid" },
+      {
+        id: "7",
+        name: "Branco",
+        hexCode: "#FFFFFF",
+        category: "solid",
+        slatImage: "esquadria-cor-branco.png",
+      },
+      {
+        id: "8",
+        name: "Preto",
+        hexCode: "#1A1A1A",
+        category: "solid",
+        slatImage: "esquadria-cor-preta.png",
+      },
+      {
+        id: "9",
+        name: "Alumínio",
+        hexCode: "#C0C0C0",
+        category: "solid",
+        slatImage: "esquadria-cor-aluminio.jpeg",
+      },
+      {
+        id: "10",
+        name: "Aço Cortêm",
+        hexCode: "#C0C0C0",
+        category: "solid",
+        slatImage: "esquadria-cor-aco_cortem.png",
+      },
     ],
   },
   gold: {
