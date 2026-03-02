@@ -171,7 +171,6 @@ export default function OrcamentoInterativo() {
   );
   const [uploadedFiles, setUploadedFiles] = useState<File[]>([]);
   const [isLoadingCep, setIsLoadingCep] = useState(false);
-  const [location] = useLocation();
   const [, setLocation] = useLocation();
 
   const {
@@ -319,15 +318,6 @@ export default function OrcamentoInterativo() {
 
     setIsSubmitting(true);
     await new Promise(resolve => setTimeout(resolve, 1500));
-
-    const lineInfo = lineColors[selectedLine];
-
-    console.log({
-      ...data,
-      selectedLine,
-      selectedColor,
-      uploadedFiles: uploadedFiles.map(f => f.name),
-    });
 
     toast.success("Solicitação recebida! Entraremos em contato em breve.");
     setIsSubmitting(false);
