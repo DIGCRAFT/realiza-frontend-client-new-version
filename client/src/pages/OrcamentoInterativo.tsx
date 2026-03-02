@@ -15,7 +15,7 @@ import { ProductLineConfig, WoodColor } from "@/types/products";
 
 const formSchema = z.object({
   name: z.string().min(2, "Nome é obrigatório"),
-  email: z.string().email("E-mail inválido"),
+  email: z.email({ message: "E-mail inválido" }),
   phone: z.string().min(10, "Telefone inválido"),
   cep: z.string().min(8, "CEP inválido"),
   rua: z.string().min(3, "Rua é obrigatória"),

@@ -30,7 +30,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 
 const budgetFormSchema = z.object({
   name: z.string().min(2, "Nome é obrigatório"),
-  email: z.string().email("E-mail inválido"),
+  email: z.email({ message: "E-mail inválido" }),
   phone: z.string().min(10, "Telefone inválido"),
   productLine: z.string().min(1, "Selecione uma linha"),
   message: z.string().optional(),

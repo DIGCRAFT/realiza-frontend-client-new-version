@@ -13,7 +13,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const formSchema = z.object({
   name: z.string().min(2, "Nome é obrigatório"),
-  email: z.string().email("E-mail inválido"),
+  email: z.email({ message: "E-mail inválido" }),
   phone: z.string().min(10, "Telefone inválido"),
 });
 
