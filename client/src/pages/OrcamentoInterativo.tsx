@@ -395,7 +395,7 @@ export default function OrcamentoInterativo() {
                         setValue("productLine", key);
                       }}
                       disabled={isDisabled}
-                      className={`w-full p-6 rounded-xl border-2 transition-all text-left ${
+                      className={`w-full p-6 rounded-xl border-2 transition-all text-left select-text ${
                         isDisabled
                           ? "border-border bg-gray-100 opacity-60 cursor-not-allowed"
                           : selectedLine === key
@@ -414,6 +414,7 @@ export default function OrcamentoInterativo() {
                       <p className="text-sm text-muted-foreground">
                         {line.description}
                       </p>
+                      {/* Div do Selecionado */}
                       {selectedLine === key && (
                         <div className="mt-4 flex items-center gap-2 text-primary">
                           <Check className="h-5 w-5" />
