@@ -190,13 +190,15 @@ export default function ColorVisualizer({
           )}
         </div>
 
-        <div className="lg:col-span-3 rounded-lg overflow-hidden border border-gray-200 bg-white min-h-[180px]">
-          <img
-            src={`/images/${selectedColor?.imageName}`}
-            alt="Referência de cor cerejeira escura"
-            className="w-full h-full object-cover"
-          />
-        </div>
+        {selectedColor?.imageName ? (
+          <div className="lg:col-span-3 rounded-lg overflow-hidden border border-gray-200 bg-white min-h-[180px]">
+            <img
+              src={`/images/${selectedColor.imageName}`}
+              alt="Referência de cor cerejeira escura"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        ) : null}
       </div>
 
       <p className="text-xs text-muted-foreground mt-3 text-center">
