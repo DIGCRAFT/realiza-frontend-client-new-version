@@ -114,7 +114,7 @@
 3. ✅ Validar fluxo de orçamento
 
 ### Médio Prazo (1-2 meses)
-1. Implementar analytics (Google Analytics 4)
+1. (Opcional) Monitorar resultados sem tracking no site (ex.: métricas do servidor/Netlify/Vercel ou relatórios do WhatsApp)
 2. A/B testing de headlines
 3. Otimizar imagens para mobile
 4. Implementar chatbot de suporte
