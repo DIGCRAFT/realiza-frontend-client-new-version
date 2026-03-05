@@ -1,3 +1,4 @@
+import ColorSimulator from '@/components/ColorSimulator';
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -417,21 +418,7 @@ export default function OrcamentoInterativo() {
                 2. Escolha a Cor
               </h3>
 
-              <ColorSelector
-                productLine={currentLineConfig}
-                onColorSelect={handleColorSelect}
-                selectedColor={selectedColor}
-              />
-
-              {/* Visualizador de Cores com Imagem de Casa */}
-              {selectedColor && (
-                <div className="mt-8">
-                  <ColorVisualizer
-                    selectedColor={selectedColor}
-                    productLine={currentLine.name}
-                  />
-                </div>
-              )}
+              <ColorSimulator showWoodColors={false} />
 
               {/* Form */}
               <div className="mt-12">
