@@ -6,7 +6,7 @@
 import { Color, ProductLineConfig } from "@/types/products";
 
 // Cores Amadeirado (baseado em ezycolor.com.br)
-const WOOD_COLORS = [
+const WOOD_COLORS: Color[] = [
   { id: "sand-ash", name: "Sand Ash", hexCode: "#d4c5b0", category: "wood" as const },
   { id: "white-arctic", name: "Branco Ártico", hexCode: "#f5f1ed", category: "wood" as const },
   { id: "light-oak", name: "Carvalho Claro", hexCode: "#d9a574", category: "wood" as const },
@@ -21,7 +21,7 @@ const WOOD_COLORS = [
   { id: "rosewood", name: "Pau-Rosa", hexCode: "#65000b", category: "wood" as const },
 ];
 
-// Cores Sólidas (Atualizadas com caminhos de imagem)
+// Cores Sólidas
 const SOLID_COLORS: Color[] = [
   { id: "white", name: "Branco", hexCode: "#ffffff", image: "/images/colors/branco.jpg", category: "solid" as const },
   { id: "black", name: "Preto", hexCode: "#1a1a1a", image: "/images/colors/preto-fosco.jpg", category: "solid" as const },
