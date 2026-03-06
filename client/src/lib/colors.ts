@@ -3,7 +3,7 @@
  * Cores amadeirado e sólidas para cada linha de produto
  */
 
-import { ProductLineConfig } from "@/types/products";
+import { Color, ProductLineConfig } from "@/types/products";
 
 // Cores Amadeirado (baseado em ezycolor.com.br)
 const WOOD_COLORS = [
@@ -21,11 +21,11 @@ const WOOD_COLORS = [
   { id: "rosewood", name: "Pau-Rosa", hexCode: "#65000b", category: "wood" as const },
 ];
 
-// Cores Sólidas
-const SOLID_COLORS = [
-  { id: "white", name: "Branco", hexCode: "#ffffff", category: "solid" as const },
-  { id: "black", name: "Preto", hexCode: "#1a1a1a", category: "solid" as const },
-  { id: "aluminum", name: "Alumínio", hexCode: "#a8a9ad", category: "solid" as const },
+// Cores Sólidas (Atualizadas com caminhos de imagem)
+const SOLID_COLORS: Color[] = [
+  { id: "white", name: "Branco", hexCode: "#ffffff", image: "/images/colors/branco.jpg", category: "solid" as const },
+  { id: "black", name: "Preto", hexCode: "#1a1a1a", image: "/images/colors/preto-fosco.jpg", category: "solid" as const },
+  { id: "aluminum", name: "Alumínio", hexCode: "#a8a9ad", image: "/images/colors/aluminio.jpg", category: "solid" as const },
 ];
 
 // Configuração das linhas de produtos
