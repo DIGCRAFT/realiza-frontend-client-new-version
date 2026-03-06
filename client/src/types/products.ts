@@ -1,7 +1,3 @@
-/**
- * Tipos oficiais para o projeto Realiza Esquadrias
- */
-
 export interface Color {
   id: string;
   name: string;
@@ -12,9 +8,14 @@ export interface Color {
 
 export interface ProductLineConfig {
   id: string;
+  name: string;
   displayName: string;
   description: string;
-  hasBonus?: boolean;
+  colors: Color[];
+  solidColors: Color[];
+  hasBonus: boolean;
+  bonusTitle?: string;
+  bonusDescription?: string;
 }
 
 // Interfaces auxiliares para o formulário de orçamento
