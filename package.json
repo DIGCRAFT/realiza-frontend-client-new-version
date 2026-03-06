@@ -92,16 +92,16 @@
   "pnpm": {
     "onlyBuiltDependencies": [
       "@tailwindcss/oxide",
-      "esbuild"
+      "esbuild",
+      "lightningcss"
     ]
   },
-    "peerDependencyRules": {
-      "ignoreMissing": [
-        "vite"
-      ],
-      "allowedVersions": {
-        "@builder.io/vite-plugin-jsx-loc>vite": "*"
-      }
+  "peerDependencyRules": {
+    "ignoreMissing": [
+      "vite"
+    ],
+    "allowedVersions": {
+      "@builder.io/vite-plugin-jsx-loc>vite": "*"
     }
   }
 }
