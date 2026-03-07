@@ -10,8 +10,6 @@ import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
 import { useLocation } from "wouter";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import ColorSelector from "@/components/ColorSelector";
-import ColorVisualizer from "@/components/ColorVisualizer";
 import { ProductLineConfig, WoodColor } from "@/types/products";
 
 const formSchema = z.object({
@@ -418,7 +416,7 @@ export default function OrcamentoInterativo() {
                 2. Escolha a Cor
               </h3>
 
-              <ColorSimulator showWoodColors={false} />
+              <ColorSimulator showWoodColors={true} />
 
               {/* Form */}
               <div className="mt-12">

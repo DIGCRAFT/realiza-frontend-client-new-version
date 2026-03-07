@@ -24,7 +24,7 @@ const WOOD_COLORS: Color[] = [
 // Cores Sólidas (Atualizadas para .png e Aço Corten)
 const SOLID_COLORS: Color[] = [
   { id: "white", name: "Branco", hexCode: "#ffffff", image: "/images/colors/branco.png", category: "solid" as const },
-  { id: "black", name: "Preto", hexCode: "#1a1a1a", image: "/images/colors/preto.png", category: "solid" as const },
+  { id: "black", name: "Preto", hexCode: "#1a1a1a", image: "/images/colors/preto.jpg", category: "solid" as const },
   { id: "corten", name: "Aço Corten", hexCode: "#844d36", image: "/images/colors/aco-corten.png", category: "solid" as const },
 ];
 

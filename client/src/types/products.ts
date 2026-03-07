@@ -4,6 +4,7 @@ export interface Color {
   hexCode?: string; // Mantém funcionando seus amadeirados
   image?: string;   // Adiciona suporte para as fotos das cores sólidas
   category: 'solid' | 'wood';
+  imageName?: string;
 }
 
 export interface ProductLineConfig {
@@ -13,7 +14,7 @@ export interface ProductLineConfig {
   description: string;
   colors: Color[];
   solidColors: Color[];
-  hasBonus: boolean;
+  hasBonus?: boolean;
   bonusTitle?: string;
   bonusDescription?: string;
 }
@@ -32,4 +33,13 @@ export interface BudgetRequest {
   phone: string;
   selections: ColorSelection[];
   message?: string;
+}
+
+export interface WoodColor {
+  id: string;
+  name: string;
+  hexCode?: string;
+  imageName?: string;
+  category: string;
+  slatImage?: string | null;
 }
