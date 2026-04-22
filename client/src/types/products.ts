@@ -5,6 +5,7 @@ export interface Color {
   image?: string;   // Adiciona suporte para as fotos das cores sólidas
   category: 'solid' | 'wood';
   imageName?: string;
+  useImage?: boolean;
 }
 
 export interface ProductLineConfig {
