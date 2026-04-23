@@ -102,6 +102,7 @@
     ],
     "allowedVersions": {
       "@builder.io/vite-plugin-jsx-loc>vite": "*"
+      "packageManager": "pnpm@9.1.0"
     }
   }
 }
