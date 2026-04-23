@@ -88,7 +88,7 @@
     "vite": "^7.1.11",
     "vitest": "^2.1.4"
   },
-  "packageManager": "pnpm@10.28.2",
+  "packageManager": "pnpm@9.1.0",
   "pnpm": {
     "onlyBuiltDependencies": [
       "@tailwindcss/oxide",
@@ -102,7 +102,6 @@
     ],
     "allowedVersions": {
       "@builder.io/vite-plugin-jsx-loc>vite": "*"
-      "packageManager": "pnpm@9.1.0"
     }
   }
 }
