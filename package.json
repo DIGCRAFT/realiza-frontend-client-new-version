@@ -88,8 +88,8 @@
     "vite": "^7.1.11",
     "vitest": "^2.1.4"
   },
-  "packageManager": "pnpm@9.1.0",
-  "pnpm": {
+  "packageManager": "npm@10.2.4",
+  "npm": {
     "onlyBuiltDependencies": [
       "@tailwindcss/oxide",
       "esbuild",
