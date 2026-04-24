@@ -1,4 +1,4 @@
-# 🚀 Realiza Alumínio - Landing Pages Otimizadas para Conversão
+# 🚀 Realiza Alumínio - Landing Pages Otimizadas para Conversão.
 
 Projeto de landing pages profissionais para a empresa **Realiza Projetos em Alumínio**, especializada em esquadrias de alto padrão (linhas SUPREMA, GOLD e PERFETTA).
 
