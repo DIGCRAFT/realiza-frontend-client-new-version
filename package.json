@@ -88,20 +88,8 @@
     "vite": "^7.1.11",
     "vitest": "^2.1.4"
   },
-  "packageManager": "npm@10.2.4",
-  "npm": {
-    "onlyBuiltDependencies": [
-      "@tailwindcss/oxide",
-      "esbuild",
-      "lightningcss"
-    ]
+  "engines": {
+    "node": "20.x"
   },
-  "peerDependencyRules": {
-    "ignoreMissing": [
-      "vite"
-    ],
-    "allowedVersions": {
-      "@builder.io/vite-plugin-jsx-loc>vite": "*"
-    }
-  }
+  "packageManager": "npm@10.2.4"
 }
