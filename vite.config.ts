@@ -1,13 +1,11 @@
+ts
 import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 import { defineConfig } from "vite";
 
-// Removido jsxLocPlugin que estava causando erro de build
-const plugins = [react(), tailwindcss()];
-
 export default defineConfig({
-  plugins,
+  plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
@@ -23,7 +21,7 @@ export default defineConfig({
   },
   server: {
     port: 3000,
-    strictPort: false, 
+    strictPort: false,
     host: true,
     allowedHosts: true,
     fs: {
