@@ -79,24 +79,24 @@ realiza-aluminio/
 
 ### Pré-requisitos
 - Node.js 18+
-- pnpm (recomendado) ou npm
+- npm (recomendado)
 
 ### Instalação
 ```bash
 cd realiza-aluminio
-pnpm install
+npm install
 ```
 
 ### Desenvolvimento
 ```bash
-pnpm run dev
+npm run dev
 ```
 
 O projeto estará disponível em `http://localhost:5173`
 
 ### Build para Produção
 ```bash
-pnpm run build
+npm run build
 ```
 
 ## 📱 Rotas Disponíveis
@@ -168,7 +168,7 @@ Consulte `GUIA_TESTES.md` para instruções completas de teste.
 
 ### Teste Rápido
 ```bash
-pnpm run dev
+npm run dev
 # Abrir http://localhost:5173/landing
 # Testar ColorSelector
 # Preencher formulário
